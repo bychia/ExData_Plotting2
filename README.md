@@ -1,3 +1,9 @@
+<h2>Instruction</h2>
+<p> 
+Download all the R-scripts and set the folder where the scripts are located, to the current working directory before executing the plot(1-6).R scripts.
+</p>
+
+
 <h2>Introduction</h2>
 
 <p>Fine particulate matter (PM<sub>2.5</sub>) is an ambient air pollutant
@@ -83,28 +89,59 @@ analysis. For each question/task you will need to make a single
 plot. Unless specified, you can use any plotting system in R to make
 your plot.</p>
 
-<ol><li><p>Have total emissions from PM<sub>2.5</sub> decreased in the United
+<ol>
+<li>
+<p>Have total emissions from PM<sub>2.5</sub> decreased in the United
 States from 1999 to 2008? Using the <strong>base</strong> plotting system, make a
 plot showing the <em>total</em> PM<sub>2.5</sub> emission from all sources
-for each of the years 1999, 2002, 2005, and 2008.</p></li>
+for each of the years 1999, 2002, 2005, and 2008.</p>
+![ScreenShot](https://raw.githubusercontent.com/bychia/ExData_Plotting2/master/plot1.png)
+  <p><B>The total emissions from PM2.5 have decreased in the US from 1999 to 2008.</B></p>
+</li>
+
 <li><p>Have total emissions from PM<sub>2.5</sub> decreased in the
 <strong>Baltimore City</strong>, Maryland (<code>fips == "24510"</code>) from 1999 to
 2008? Use the <strong>base</strong> plotting system to make a plot answering this
-question.</p></li>
+question.</p>
+![ScreenShot](https://raw.githubusercontent.com/bychia/ExData_Plotting2/master/plot2.png)
+  <p><B>Overall total emissions from PM2.5 have decreased in Baltimore City, Maryland from 1999-2008.</B></p>
+</li>
+
 <li><p>Of the four types of sources indicated by the <code>type</code>
 (point, nonpoint, onroad, nonroad) variable, which of these four
 sources have seen decreases in emissions from 1999–2008 for
 <strong>Baltimore City</strong>? Which have seen increases in emissions from
 1999–2008? Use the <strong>ggplot2</strong> plotting system to make a plot answer
-this question.</p></li>
+this question.</p>
+![ScreenShot](https://raw.githubusercontent.com/bychia/ExData_Plotting2/master/plot3.png)
+  <p><B>NONPOINT, NON-ROAD and ON-ROAD type of sources have seen decreases in emissions from 1999-2008. </B></p>
+  <p><B>POINT type of sources has seen an increase in emissions from 1999-2005. It then drops from 2005 to 2008.</B></p>
+</li>
+
 <li><p>Across the United States, how have emissions from coal
-combustion-related sources changed from 1999–2008?</p></li>
+combustion-related sources changed from 1999–2008?</p>
+![ScreenShot](https://raw.githubusercontent.com/bychia/ExData_Plotting2/master/plot4.png)
+  <p><B>The emissions from coal combustion-related sources started to drop from 1999 to 2002. Even though, there was a slight increase from 2002 to 2005, it dived deep from 2005 to 2008. The total fall in the emissions in US has dropped for 250000 units in PM2.5 emissions from 1999 to 2008. </B></p>
+</li>
+
 <li><p>How have emissions from motor vehicle sources changed from
-1999–2008 in <strong>Baltimore City</strong>? </p></li>
+1999–2008 in <strong>Baltimore City</strong>?</p>
+![ScreenShot](https://raw.githubusercontent.com/bychia/ExData_Plotting2/master/plot5.png)
+  <p><B>Baltimore City has seen a deep drop in the emissions from motor vehicles sources from 1999 to 2002. The emissions fell back into subtle decrease from 2002 to 2005 and continued to drop further from 2005 to 2008.</B></p>
+</li>
+
 <li><p>Compare emissions from motor vehicle sources in Baltimore City with
 emissions from motor vehicle sources in <strong>Los Angeles County</strong>,
 California (<code>fips == "06037"</code>). Which city has seen greater
-changes over time in motor vehicle emissions?</p></li>
+changes over time in motor vehicle emissions?</p>
+![ScreenShot](https://raw.githubusercontent.com/bychia/ExData_Plotting2/master/plot6.png)
+  <p>
+    The PM2.5 emissions from motor vehicle in Baltimore City started to drop in 1999 at a gradual pace.
+    The PM2.5 emissions from motor vehicle in LA Country, started to increase from around 4000 units in 1999 and has peaked at 2005 with more than 4500 units in emission. It then drops tremendously from 2005 to 2008.
+  </p>
+  <p><B>Los Angeles Country has seen the greater changes over time in motor vehicle emissions.</B></p>
+</li>
+
 </ol><h3>Making and Submitting Plots</h3>
 
 <p>For each plot you should</p>
@@ -121,7 +158,4 @@ PNG file. Only include the code for a single plot
 <li><p>Upload the PNG file on the Assignment submission page</p></li>
 <li><p>Copy and paste the R code from the corresponding R file into the
 text box at the appropriate point in the peer assessment.</p></li>
-</ul></div></div></div><div id="evaluatedGroup-8c6ff706713a7cf1" class="assessmentSection"><div id="evaluatedGroup-90399c3a50cc83c9" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-90399c3a50cc83c9" class="assessmentText" dir="auto">Have total emissions from PM<sub>2.5</sub> decreased in the United
-States from 1999 to 2008? Using the <strong>base</strong> plotting system, make a
-plot showing the <em>total</em> PM<sub>2.5</sub> emission from all sources
-for each of the years 1999, 2002, 2005, and 2008.
+</ul></div></div></div>
